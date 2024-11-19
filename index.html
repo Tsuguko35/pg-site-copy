@@ -9,43 +9,47 @@
   </head>
   <body>
     <!-- NAV BAR -->
-    <div class="nav__wrapper max__w flex">
-      <div class="nav__container max__screen__w shadow flex bg__white">
-        <!-- NAV LOGO -->
-        <a href="#" class="nav__logo flex">
-          <div class="image__placeholder"></div>
-        </a>
+    <header class="nav__wrapper max__w">
+      <div class="nav__container max__w container">
+        <div class="nav__bar max__w shadow flex bg__white">
+          <!-- NAV LOGO -->
+          <a href="#" class="nav__logo flex column justify__center">
+            <div class="image__placeholder"></div>
+          </a>
 
-        <!-- NAV  -->
-        <nav class="flex max__w">
-          <ul class="flex max__w">
-            <li><a href="#">Industries</a></li>
-            <li><a href="#">Program</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Partners</a></li>
-            <li><a href="#">Stories</a></li>
-            <li><a href="#">Vacancies</a></li>
-            <li><a href="#" class="button">Contact Us</a></li>
-          </ul>
-        </nav>
+          <!-- NAV  -->
+          <nav class="flex max__w">
+            <ul class="flex max__w">
+              <li><a href="#">Industries</a></li>
+              <li><a href="#">Program</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Partners</a></li>
+              <li><a href="#">Stories</a></li>
+              <li><a href="#">Vacancies</a></li>
+              <li><a href="#" class="button">Contact Us</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
-    </div>
+    </header>
 
     <!-- MAIN  -->
     <main>
       <!-- HERO SECTION  -->
-      <section class="hero__wrapper justify__center bg__peach flex">
-        <div class="hero__banner__container max__screen__w flex">
+      <section class="hero__wrapper max__w bg__peach flex">
+        <div class="hero__banner__container max__w container flex">
           <div class="hero__banner">
-            <div class="hero__banner__content max__w flex">
+            <div
+              class="hero__banner__content max__w flex column justify__center"
+            >
               <h1 class="flex">
                 <!-- SPANS FOR ANIMATION WHEN JS IS ADDED  -->
-                <span>Australia's</span>
-                <span>Leading</span>
-                <span>Accredited</span>
-                <span>Vocational</span>
-                <span>Placement</span>
-                <span>Provider</span>
+                <span class="fw__500">Australia's</span>
+                <span class="fw__500">Leading</span>
+                <span class="fw__500">Accredited</span>
+                <span class="fw__500">Vocational</span>
+                <span class="fw__500">Placement</span>
+                <span class="fw__500">Provider</span>
               </h1>
               <div class="spacer__1"></div>
               <p class="bold">Lorem ipsum dolor sit amet, consectetur.</p>
@@ -73,24 +77,26 @@
       </section>
 
       <!-- COMPANY STATS -->
-      <section class="company__stats__wrapper justify__center bg__white flex">
-        <div class="company__stats__container max__screen__w flex">
+      <section class="company__stats__wrapper bg__white">
+        <div
+          class="company__stats__container container__padding container flex column"
+        >
           <!-- STATS HEADER  -->
           <h1>
             <!-- SPANS FOR ANIMATION WHEN JS IS ADDED  -->
-            <span>Lorem</span>
-            <span>ipsum</span>
-            <span>dolor</span>
-            <span>sit</span>
-            <span>amet</span>
-            <span>consectetur</span>
-            <span>adipiscing</span>
-            <span>elit</span>
+            <span class="fw__500">Lorem</span>
+            <span class="fw__500">ipsum</span>
+            <span class="fw__500">dolor</span>
+            <span class="fw__500">sit</span>
+            <span class="fw__500">amet</span>
+            <span class="fw__500">consectetur</span>
+            <span class="fw__500">adipiscing</span>
+            <span class="fw__500">elit</span>
           </h1>
 
           <!-- STATS  -->
-          <div class="company__stats__details grid">
-            <div class="stat flex max__w">
+          <div class="company__stats__details grid grid__col__3">
+            <div class="stat flex max__w column">
               <div class="image__placeholder circle__mini"></div>
               <h3 class="stat__title">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -100,7 +106,7 @@
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
             </div>
-            <div class="stat flex max__w">
+            <div class="stat flex max__w column">
               <div class="image__placeholder circle__mini"></div>
               <h3 class="stat__title">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -110,7 +116,7 @@
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
             </div>
-            <div class="stat flex max__w">
+            <div class="stat flex max__w column">
               <div class="image__placeholder circle__mini"></div>
               <h3 class="stat__title">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -124,8 +130,8 @@
 
           <div class="company__stats__overview flex bg__gradient grid">
             <div class="image__placeholder"></div>
-            <div class="overview__detials flex">
-              <div class="overview__detials__text flex">
+            <div class="overview__detials flex column">
+              <div class="overview__detials__text flex column">
                 <h3>
                   <!-- SPANS FOR ANIMATION WHEN JS IS ADDED  -->
                   <span>Lorem</span>
@@ -145,25 +151,32 @@
                   laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
               </div>
-              <a href="#" class="underline">Learn more about us</a>
+              <a href="#" class="underline flex"
+                >Learn more about us
+                <div class="image__placeholder"></div
+              ></a>
             </div>
+
+            <!-- BUBBLES  -->
             <div class="overview__bubbles">
-              <div class="bubble flex smaller b1">
-                <div>6200</div>
+              <div
+                class="bubble flex absolute column justify__center smaller b1"
+              >
+                <div class="fw__500">6200</div>
                 <p>
                   Lorem ipsum <br />
                   dolor sit amet
                 </p>
               </div>
-              <div class="bubble flex b2">
-                <div>93%</div>
+              <div class="bubble flex absolute column justify__center b2">
+                <div class="fw__500">93%</div>
                 <p>
                   Lorem ipsum <br />
                   dolor sit amet
                 </p>
               </div>
-              <div class="bubble flex b3">
-                <div>10000</div>
+              <div class="bubble flex absolute column justify__center b3">
+                <div class="fw__500">10000</div>
                 <p>
                   Lorem ipsum <br />
                   dolor sit amet
@@ -173,37 +186,113 @@
           </div>
 
           <div class="industry__sectors grid">
-            <div class="industry__sectors__details flex">
+            <div class="industry__sectors__details flex column">
               <h3>26+ Industry Sectors</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-              <a href="#" class="underline">Get Started</a>
+              <a href="#" class="underline flex"
+                >Get Started
+                <div class="image__placeholder"></div
+              ></a>
             </div>
 
-            <div class="industry__sectors__cards grid">
-              <a href="#" class="card bg__gradient__2">Lorem ipsum</a>
-              <a href="#" class="card">Lorem ipsum</a>
-              <a href="#" class="card">Lorem ipsum</a>
-              <a href="#" class="card bg__gradient__3">Lorem ipsum</a>
-              <a href="#" class="card">Lorem ipsum</a>
-              <a href="#" class="card">Lorem ipsum</a>
-              <a href="#" class="card bg__gradient__2">Lorem ipsum</a>
-              <a href="#" class="card bg__gradient__3">Lorem ipsum</a>
-              <a href="#" class="card">Lorem ipsum</a>
-              <a href="#" class="card bg__gradient__3">Lorem ipsum</a>
-              <a href="#" class="card">Lorem ipsum</a>
-              <a href="#" class="card bg__gradient__2">Lorem ipsum</a>
-              <a href="#" class="card">Lorem ipsum</a>
-              <a href="#" class="card bg__gradient__3">Lorem ipsum</a>
-              <a href="#" class="card">Lorem ipsum</a>
-              <a href="#" class="card">Lorem ipsum</a>
-              <a href="#" class="card">Lorem ipsum</a>
-              <a href="#" class="card">Lorem ipsum</a>
-              <a href="#" class="card bg__gradient__2">Lorem ipsum</a>
-              <a href="#" class="card bg__gradient__3">Lorem ipsum</a>
-              <a href="#" class="card bg__gradient__3">Lorem ipsum</a>
-              <a href="#" class="card">Lorem ipsum</a>
-              <a href="#" class="card bg__gradient__3">Lorem ipsum</a>
-              <a href="#" class="card bg__gradient__2">Lorem ipsum</a>
+            <!-- LIST OF INDUSTRY SECTORS  -->
+            <div class="industry__sectors__cards grid grid__col__3">
+              <a href="#" class="card flex bg__gradient__2"
+                ><span>Lorem ipsum</span>
+                <div class="image__placeholder"></div
+              ></a>
+              <a href="#" class="card flex"
+                ><span>Lorem ipsum</span>
+                <div class="image__placeholder"></div
+              ></a>
+              <a href="#" class="card flex"
+                ><span>Lorem ipsum</span>
+                <div class="image__placeholder"></div
+              ></a>
+              <a href="#" class="card flex bg__gradient__3"
+                ><span>Lorem ipsum</span>
+                <div class="image__placeholder"></div
+              ></a>
+              <a href="#" class="card flex"
+                ><span>Lorem ipsum</span>
+                <div class="image__placeholder"></div
+              ></a>
+              <a href="#" class="card flex"
+                ><span>Lorem ipsum</span>
+                <div class="image__placeholder"></div
+              ></a>
+              <a href="#" class="card flex bg__gradient__2"
+                ><span>Lorem ipsum</span>
+                <div class="image__placeholder"></div
+              ></a>
+              <a href="#" class="card flex bg__gradient__3"
+                ><span>Lorem ipsum</span>
+                <div class="image__placeholder"></div
+              ></a>
+              <a href="#" class="card flex"
+                ><span>Lorem ipsum</span>
+                <div class="image__placeholder"></div
+              ></a>
+              <a href="#" class="card flex bg__gradient__3"
+                ><span>Lorem ipsum</span>
+                <div class="image__placeholder"></div
+              ></a>
+              <a href="#" class="card flex"
+                ><span>Lorem ipsum</span>
+                <div class="image__placeholder"></div
+              ></a>
+              <a href="#" class="card flex bg__gradient__2"
+                ><span>Lorem ipsum</span>
+                <div class="image__placeholder"></div
+              ></a>
+              <a href="#" class="card flex"
+                ><span>Lorem ipsum</span>
+                <div class="image__placeholder"></div
+              ></a>
+              <a href="#" class="card flex bg__gradient__3"
+                ><span>Lorem ipsum</span>
+                <div class="image__placeholder"></div
+              ></a>
+              <a href="#" class="card flex"
+                ><span>Lorem ipsum</span>
+                <div class="image__placeholder"></div
+              ></a>
+              <a href="#" class="card flex"
+                ><span>Lorem ipsum</span>
+                <div class="image__placeholder"></div
+              ></a>
+              <a href="#" class="card flex"
+                ><span>Lorem ipsum</span>
+                <div class="image__placeholder"></div
+              ></a>
+              <a href="#" class="card flex"
+                ><span>Lorem ipsum</span>
+                <div class="image__placeholder"></div
+              ></a>
+              <a href="#" class="card flex bg__gradient__2"
+                ><span>Lorem ipsum</span>
+                <div class="image__placeholder"></div
+              ></a>
+              <a href="#" class="card flex bg__gradient__3"
+                ><span>Lorem ipsum</span>
+                <div class="image__placeholder"></div
+              ></a>
+              <a href="#" class="card flex bg__gradient__3"
+                ><span>Lorem ipsum</span>
+                <div class="image__placeholder"></div
+              ></a>
+              <a href="#" class="card flex"
+                ><span>Lorem ipsum</span>
+                <div class="image__placeholder"></div
+              ></a>
+              <a href="#" class="card flex bg__gradient__3"
+                ><span>Lorem ipsum</span>
+                <div class="image__placeholder"></div
+              ></a>
+              <a href="#" class="card flex bg__gradient__2"
+                ><span>Lorem ipsum</span>
+                <div class="image__placeholder"></div
+              ></a>
             </div>
           </div>
         </div>
@@ -211,12 +300,12 @@
 
       <!-- COMPANY LIST  -->
       <!-- TO FINISH ANIMATION  -->
-      <section class="companies__wrapper flex justify__center bg__gray">
-        <div class="companies__container max__screen__w flex">
+      <section class="companies__wrapper bg__gray">
+        <div class="companies__container container container__padding flex">
           <div class="companies__animation">
             <div class="animation__container flex">
               <div class="row r1">
-                <div class="row__list flex">
+                <div class="row__list relative column flex">
                   <div class="image__placeholder"></div>
                   <div class="image__placeholder"></div>
                   <div class="image__placeholder"></div>
@@ -227,7 +316,7 @@
                 </div>
               </div>
               <div class="row r2">
-                <div class="row__list flex">
+                <div class="row__list relative column flex">
                   <div class="image__placeholder"></div>
                   <div class="image__placeholder"></div>
                   <div class="image__placeholder"></div>
@@ -239,8 +328,8 @@
               </div>
             </div>
           </div>
-          <div class="company__list__text flex">
-            <div class="text__details flex">
+          <div class="company__list__text flex column">
+            <div class="text__details flex column">
               <h3>Lorem ipsum dolor sit amet, consectetur</h3>
               <p>
                 We are connected to over 6,200 Australian host organisations
@@ -248,23 +337,27 @@
                 sized companies.
               </p>
             </div>
-            <a href="#" class="underline">Learn about our training process</a>
+            <a href="#" class="underline flex"
+              >Learn about our training process
+              <div class="image__placeholder"></div
+            ></a>
           </div>
         </div>
       </section>
 
       <!-- CUSTOMER REVIEWS  -->
-      <section
-        class="customer__reviews__wrapper flex justify__center bg__white"
-      >
-        <div class="customer__reviews__container max__screen__w flex">
-          <div class="customer__reviews__title flex">
+      <section class="customer__reviews__wrapper bg__white">
+        <div
+          class="customer__reviews__container container container__padding flex column"
+        >
+          <div class="customer__reviews__title flex column justify__center">
             <h3>Lorem ipsum dolor sit amet</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
           </div>
 
-          <div class="customer__reviews__list grid">
-            <div class="card flex shadow">
+          <!-- REVIEWS  -->
+          <div class="customer__reviews__list grid grid__col__3">
+            <div class="card column flex shadow">
               <div class="stars flex">
                 <div class="image__placeholder"></div>
                 <div class="image__placeholder"></div>
@@ -280,7 +373,7 @@
               </p>
               <div class="customer__details__container flex">
                 <div class="image__placeholder"></div>
-                <div class="customer__details flex">
+                <div class="customer__details flex column">
                   <div class="name bold">Lorem ipsum dolor</div>
                   <div class="position">
                     Lorem ipsum dolor sit amet, consectetur
@@ -288,7 +381,7 @@
                 </div>
               </div>
             </div>
-            <div class="card flex shadow">
+            <div class="card column flex shadow">
               <div class="stars flex">
                 <div class="image__placeholder"></div>
                 <div class="image__placeholder"></div>
@@ -304,7 +397,7 @@
               </p>
               <div class="customer__details__container flex">
                 <div class="image__placeholder"></div>
-                <div class="customer__details flex">
+                <div class="customer__details flex column">
                   <div class="name bold">Lorem ipsum dolor</div>
                   <div class="position">
                     Lorem ipsum dolor sit amet, consectetur
@@ -312,7 +405,7 @@
                 </div>
               </div>
             </div>
-            <div class="card flex shadow">
+            <div class="card column flex shadow">
               <div class="stars flex">
                 <div class="image__placeholder"></div>
                 <div class="image__placeholder"></div>
@@ -328,7 +421,7 @@
               </p>
               <div class="customer__details__container flex">
                 <div class="image__placeholder"></div>
-                <div class="customer__details flex">
+                <div class="customer__details flex column">
                   <div class="name bold">Lorem ipsum dolor</div>
                   <div class="position">
                     Lorem ipsum dolor sit amet, consectetur
@@ -336,7 +429,7 @@
                 </div>
               </div>
             </div>
-            <div class="card flex shadow">
+            <div class="card column flex shadow">
               <div class="stars flex">
                 <div class="image__placeholder"></div>
                 <div class="image__placeholder"></div>
@@ -352,7 +445,7 @@
               </p>
               <div class="customer__details__container flex">
                 <div class="image__placeholder"></div>
-                <div class="customer__details flex">
+                <div class="customer__details flex column">
                   <div class="name bold">Lorem ipsum dolor</div>
                   <div class="position">
                     Lorem ipsum dolor sit amet, consectetur
@@ -360,7 +453,7 @@
                 </div>
               </div>
             </div>
-            <div class="card flex shadow">
+            <div class="card column flex shadow">
               <div class="stars flex">
                 <div class="image__placeholder"></div>
                 <div class="image__placeholder"></div>
@@ -376,7 +469,7 @@
               </p>
               <div class="customer__details__container flex">
                 <div class="image__placeholder"></div>
-                <div class="customer__details flex">
+                <div class="customer__details flex column">
                   <div class="name bold">Lorem ipsum dolor</div>
                   <div class="position">
                     Lorem ipsum dolor sit amet, consectetur
@@ -384,7 +477,7 @@
                 </div>
               </div>
             </div>
-            <div class="card flex shadow">
+            <div class="card column flex shadow">
               <div class="stars flex">
                 <div class="image__placeholder"></div>
                 <div class="image__placeholder"></div>
@@ -400,7 +493,7 @@
               </p>
               <div class="customer__details__container flex">
                 <div class="image__placeholder"></div>
-                <div class="customer__details flex">
+                <div class="customer__details flex column">
                   <div class="name bold">Lorem ipsum dolor</div>
                   <div class="position">
                     Lorem ipsum dolor sit amet, consectetur
@@ -408,7 +501,7 @@
                 </div>
               </div>
             </div>
-            <div class="card flex shadow">
+            <div class="card column flex shadow">
               <div class="stars flex">
                 <div class="image__placeholder"></div>
                 <div class="image__placeholder"></div>
@@ -424,7 +517,7 @@
               </p>
               <div class="customer__details__container flex">
                 <div class="image__placeholder"></div>
-                <div class="customer__details flex">
+                <div class="customer__details flex column">
                   <div class="name bold">Lorem ipsum dolor</div>
                   <div class="position">
                     Lorem ipsum dolor sit amet, consectetur
@@ -432,7 +525,7 @@
                 </div>
               </div>
             </div>
-            <div class="card flex shadow">
+            <div class="card column flex shadow">
               <div class="stars flex">
                 <div class="image__placeholder"></div>
                 <div class="image__placeholder"></div>
@@ -448,7 +541,7 @@
               </p>
               <div class="customer__details__container flex">
                 <div class="image__placeholder"></div>
-                <div class="customer__details flex">
+                <div class="customer__details flex column">
                   <div class="name bold">Lorem ipsum dolor</div>
                   <div class="position">
                     Lorem ipsum dolor sit amet, consectetur
@@ -456,7 +549,7 @@
                 </div>
               </div>
             </div>
-            <div class="card flex shadow">
+            <div class="card column flex shadow">
               <div class="stars flex">
                 <div class="image__placeholder"></div>
                 <div class="image__placeholder"></div>
@@ -472,7 +565,7 @@
               </p>
               <div class="customer__details__container flex">
                 <div class="image__placeholder"></div>
-                <div class="customer__details flex">
+                <div class="customer__details flex column">
                   <div class="name bold">Lorem ipsum dolor</div>
                   <div class="position">
                     Lorem ipsum dolor sit amet, consectetur
@@ -480,7 +573,7 @@
                 </div>
               </div>
             </div>
-            <div class="card flex shadow">
+            <div class="card column flex shadow">
               <div class="stars flex">
                 <div class="image__placeholder"></div>
                 <div class="image__placeholder"></div>
@@ -496,7 +589,7 @@
               </p>
               <div class="customer__details__container flex">
                 <div class="image__placeholder"></div>
-                <div class="customer__details flex">
+                <div class="customer__details flex column">
                   <div class="name bold">Lorem ipsum dolor</div>
                   <div class="position">
                     Lorem ipsum dolor sit amet, consectetur
@@ -504,7 +597,7 @@
                 </div>
               </div>
             </div>
-            <div class="card flex shadow">
+            <div class="card column flex shadow">
               <div class="stars flex">
                 <div class="image__placeholder"></div>
                 <div class="image__placeholder"></div>
@@ -520,7 +613,7 @@
               </p>
               <div class="customer__details__container flex">
                 <div class="image__placeholder"></div>
-                <div class="customer__details flex">
+                <div class="customer__details flex column">
                   <div class="name bold">Lorem ipsum dolor</div>
                   <div class="position">
                     Lorem ipsum dolor sit amet, consectetur
@@ -528,7 +621,7 @@
                 </div>
               </div>
             </div>
-            <div class="card flex shadow">
+            <div class="card column flex shadow">
               <div class="stars flex">
                 <div class="image__placeholder"></div>
                 <div class="image__placeholder"></div>
@@ -544,7 +637,7 @@
               </p>
               <div class="customer__details__container flex">
                 <div class="image__placeholder"></div>
-                <div class="customer__details flex">
+                <div class="customer__details flex column">
                   <div class="name bold">Lorem ipsum dolor</div>
                   <div class="position">
                     Lorem ipsum dolor sit amet, consectetur
@@ -555,20 +648,23 @@
           </div>
 
           <div class="link__holder flex justify__center">
-            <a href="#" class="underline">Read All Reviews</a>
+            <a href="#" class="underline flex"
+              >Read All Reviews
+              <div class="image__placeholder"></div
+            ></a>
           </div>
         </div>
       </section>
 
       <!-- ADDITIONAL CONTENT  -->
-      <section
-        class="additional__content__wrapper flex justify__center bg__white"
-      >
-        <div class="additional__content__container max__screen__w">
+      <section class="additional__content__wrapper bg__white">
+        <div
+          class="additional__content__container container__padding container"
+        >
           <div class="additional__content bg__gradient__4 flex">
-            <div class="training__content flex">
-              <div class="training__content__text flex">
-                <h3 class="flex">
+            <div class="training__content flex column">
+              <div class="training__content__text flex column">
+                <h3 class="flex column">
                   <span>Lorem</span>
                   <span>ipsum</span>
                   <span>dolor</span>
@@ -578,14 +674,19 @@
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
               </div>
-              <a href="#" class="underline">Learn About our training process</a>
+              <a href="#" class="underline flex"
+                >Learn About our training process
+                <div class="image__placeholder"></div
+              ></a>
             </div>
+
+            <!-- ADDITIONAL CONTENT IMAGE  -->
             <div class="additional__content__image">
               <div class="image__placeholder"></div>
             </div>
           </div>
 
-          <div class="training__grid grid">
+          <div class="training__grid grid grid__col__3">
             <div class="training__card">
               <span class="bold"
                 ><span class="image__placeholder"></span> Discovery.</span
@@ -611,16 +712,13 @@
 
       <!-- COLLEGE LIST  -->
       <!-- SLIDE ANIMATION NEEDED  -->
-      <section
-        class="college__list__wrapper max__w flex justify__center bg__white"
-      >
-        <div class="college__list__container flex">
+      <section class="college__list__wrapper max__w bg__white">
+        <div
+          class="college__list__container container container__padding column justify__center flex"
+        >
           <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
 
           <div class="college__list flex">
-            <div class="image__placeholder"></div>
-            <div class="image__placeholder"></div>
-            <div class="image__placeholder"></div>
             <div class="image__placeholder"></div>
             <div class="image__placeholder"></div>
             <div class="image__placeholder"></div>
@@ -636,8 +734,8 @@
       </section>
 
       <!-- FAQ  -->
-      <section class="faq__wrapper flex justify__center bg__white">
-        <div class="faq__container flex max__screen__w">
+      <section class="faq__wrapper bg__white">
+        <div class="faq__container flex container container__padding">
           <!-- SPAN FOR ANIMATION ON SCROLL  -->
           <div class="faq__title">
             <h2>
@@ -647,7 +745,8 @@
             </h2>
           </div>
 
-          <div class="faqs flex">
+          <!-- FAQS LIST -->
+          <div class="faqs flex column">
             <div class="flex">
               <p class="bold">Lorem ipsum dolor sit amet</p>
               <div class="image__placeholder"></div>
@@ -690,8 +789,90 @@
     </main>
 
     <!-- FOOTER  -->
-    <footer class="justify__center bg__peach flex">
-      <div class="footer__container max__screen__w flex"></div>
+    <footer class="justify__center bg__peach flex relative">
+      <div class="footer__container max__w flex fixed relative">
+        <div class="container max__w">
+          <!-- FOOTER TOP  -->
+          <div class="footer__top grid grid__col__3">
+            <div class="top__card column flex">
+              <p class="card__title fw__500">Lorem ipsum dolor</p>
+              <p class="card__desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt
+              </p>
+              <a href="" class="flex fw__500"
+                >Get Started
+                <div class="image__placeholder"></div
+              ></a>
+            </div>
+            <div class="top__card column flex">
+              <p class="card__title fw__500">Lorem ipsum dolor</p>
+              <p class="card__desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt
+              </p>
+              <a href="" class="flex fw__500"
+                >Get Started
+                <div class="image__placeholder"></div
+              ></a>
+            </div>
+            <div class="top__card column flex">
+              <p class="card__title fw__500">Lorem ipsum dolor</p>
+              <p class="card__desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt
+              </p>
+              <a href="" class="flex fw__500"
+                >Get Started
+                <div class="image__placeholder"></div
+              ></a>
+            </div>
+          </div>
+
+          <!-- FOOTER MID  -->
+          <div class="footer__mid flex">
+            <div class="links flex column">
+              <a href="#" class="flex"
+                >Get in Touch to Find Out More
+                <div class="image__placeholder"></div
+              ></a>
+              <div class="list flex">
+                <a href="#" class="fw__500">Industry Sectors</a>
+                <a href="#" class="fw__500">Internship Board</a>
+                <a href="#" class="fw__500">FAQs</a>
+                <a href="#" class="fw__500">Resources</a>
+                <a href="#" class="fw__500">Contact</a>
+                <div class="social__links flex">
+                  <a href="#"><div class="image__placeholder"></div></a
+                  ><a href="#"><div class="image__placeholder"></div></a
+                  ><a href="#"><div class="image__placeholder"></div></a
+                  ><a href="#"><div class="image__placeholder"></div></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- FOOTER BOTTOM  -->
+          <div class="footer__bottom flex">
+            <p>© Premium Graduate Placements</p>
+            <div class="links flex">
+              <a href="#">Privacy Policy</a>
+              <span>/</span>
+              <a href="#">Terms & conditions</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- SIDE LINKS  -->
+        <a href="#" class="side__link l1 absolute"
+          ><div class="image__placeholder"></div
+        ></a>
+        <a href="#" class="side__link l2 absolute"
+          ><div class="image__placeholder"></div
+        ></a>
+      </div>
+
+      <div class="footer__filler"></div>
     </footer>
   </body>
 </html>
